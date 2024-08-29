@@ -1,6 +1,7 @@
+pip==24.2
 openai
+pysqlite3-binary
 chromadb
-sqlite==3.35.0
 trulens-core @ git+https://github.com/truera/trulens#egg=trulens-core&subdirectory=src/core/
 trulens-feedback @ git+https://github.com/truera/trulens#egg=trulens-feedback&subdirectory=src/feedback/
 trulens-providers-openai @ git+https://github.com/truera/trulens#egg=trulens-providers-openai&subdirectory=src/providers/openai/
