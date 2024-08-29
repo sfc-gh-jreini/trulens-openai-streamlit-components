@@ -1,0 +1,5 @@
+# Ignore default.sqlite file
+default.sqlite
+
+# Ignore .env files
+.env
