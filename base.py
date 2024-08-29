@@ -4,7 +4,7 @@ import numpy as np
 
 from trulens.core import TruSession
 from trulens.core.guardrails.base import context_filter
-from trulens.core import TruCustomApp
+from trulens.apps.custom import TruCustomApp
 from trulens.core.app.custom import instrument
 from trulens.providers.openai import OpenAI as OpenAIProvider
 from trulens.core import Feedback
