@@ -2,6 +2,7 @@ pip==24.0
 nltk==3.9.1
 openai
 chromadb
+sqlite==3.35
 trulens-core @ git+https://github.com/truera/trulens@josh/streamlit_demo#egg=trulens-core&subdirectory=src/core/
 trulens-feedback @ git+https://github.com/truera/trulens@josh/streamlit_demo#egg=trulens-feedback&subdirectory=src/feedback/
 trulens-providers-openai @ git+https://github.com/truera/trulens@josh/streamlit_demo#egg=trulens-providers-openai&subdirectory=src/providers/openai/
