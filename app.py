@@ -50,10 +50,3 @@ if submitted:
 
     trulens_st.trulens_feedback(record=record)
 
-with st.expander("Open to see aggregate evaluation metrics"):
-
-    st.title("Aggregate Evaluation Metrics")
-    st.write("Powered by TruLens 🦑.")
-
-    trulens_st.trulens_leaderboard()
-
