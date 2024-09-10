@@ -69,7 +69,7 @@ class RAG_from_scratch:
         completion = self.generate_completion(query, context_str)
         return completion
 
-class filtered_RAG_from_scratch:
+class filtered_RAG_from_scratch(RAG_from_scratch):
     @instrument
     @context_filter(f_guardrail, 0.75, keyword_for_prompt="query")
     def retrieve(self, query: str) -> list:
@@ -78,39 +78,6 @@ class filtered_RAG_from_scratch:
         """
         results = vector_store.query(query_texts=query, n_results=4)
         return [doc for sublist in results["documents"] for doc in sublist]
-
-    @instrument
-    def generate_completion(self, query: str, context_str: list) -> str:
-        """
-        Generate answer from context.
-        """
-        completion = (
-            oai_client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                temperature=0,
-                messages=[
-                    {
-                        "role": "user",
-                        "content": f"We have provided context information below. \n"
-                        f"---------------------\n"
-                        f"{context_str}"
-                        f"\n---------------------\n"
-                        f"Given this information, please answer the question: {query}",
-                    }
-                ],
-            )
-            .choices[0]
-            .message.content
-        )
-        return completion
-
-    @instrument
-    def query(self, query: str) -> str:
-        context_str = self.retrieve(query=query)
-        completion = self.generate_completion(
-            query=query, context_str=context_str
-        )
-        return completion
 
 
 filtered_rag = filtered_RAG_from_scratch()
