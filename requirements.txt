@@ -2,7 +2,7 @@ pip==24.2
 openai
 pysqlite3-binary
 chromadb
-trulens-core
-trulens-feedback
-trulens-providers-openai
-trulens-dashboard
+trulens-core>=1.0.4
+trulens-feedback>=1.0.4
+trulens-providers-openai>=1.0.4
+trulens-dashboard>=1.0.4
