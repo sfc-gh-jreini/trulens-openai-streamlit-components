@@ -5,4 +5,4 @@ chromadb==0.5.5
 trulens-core>=1.0.4
 trulens-feedback>=1.0.4
 trulens-providers-openai>=1.0.4
-trulens-dashboard>=1.0.4
+trulens-dashboard @ git+https://github.com/truera/trulens#egg=trulens-dashboard&subdirectory=src/dashboard/
