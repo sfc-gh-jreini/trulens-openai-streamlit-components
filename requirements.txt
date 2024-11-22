@@ -1,5 +1,6 @@
 openai==1.53.0
 pysqlite3-binary
+trulens==1.2.6
 trulens-core==1.2.6
 trulens-feedback==1.2.6
 trulens-providers-openai==1.2.6
@@ -7,3 +8,4 @@ trulens-dashboard==1.2.6
 langchain==0.1.4
 chromadb==0.4.24
 pydantic==2.10.0
+pydantic-core==2.27.1
