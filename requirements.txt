@@ -5,5 +5,5 @@ trulens-feedback==1.2.6
 trulens-providers-openai==1.2.6
 trulens-dashboard==1.2.6
 chromadb==0.4.24
-pydantic==2.10.0
+pydantic==2.10.1
 pydantic-core==2.27.1
