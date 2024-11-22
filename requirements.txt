@@ -1,8 +1,9 @@
-pip==24.2
-openai
+openai==1.53.0
 pysqlite3-binary
-chromadb==0.5.5
-trulens-core>=1.0.4
-trulens-feedback>=1.0.4
-trulens-providers-openai>=1.0.4
-trulens-dashboard @ git+https://github.com/truera/trulens#egg=trulens-dashboard&subdirectory=src/dashboard/
+trulens-core==1.2.6
+trulens-feedback==1.2.6
+trulens-providers-openai==1.2.6
+trulens-dashboard==1.2.6
+langchain==0.1.4
+chromadb==0.4.24
+pydantic==2.10.0
